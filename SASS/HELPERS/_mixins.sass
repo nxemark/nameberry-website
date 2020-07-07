@@ -1,0 +1,25 @@
+@import "variables"
+    
+    
+=logosize($height,$width)
+    height:    $height
+    width:     $width
+    display: block
+
+=button-variant($color, $bg, $border)
+    $background-hover:   darken($bg, 10%)
+    $border-hover:       darken($border, 10%)
+    $color-hover:        darken($color, 10%)
+    
+    color:               $color 
+    background-color:    $bg 
+    border-color:        $border
+    &:hover
+        color:              $color-hover
+        background-color:   $background-hover
+        border-color:       $border-hover
+
+=btn-sizing($btn-padding-y, $btn-padding-x, $border-radius, $font-base)
+    padding: $btn-padding-y $btn-padding-x
+    border-radius: $border-radius
+    font-size:  $font-base

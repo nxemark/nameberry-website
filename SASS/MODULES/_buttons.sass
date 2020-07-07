@@ -1,0 +1,27 @@
+@import "helpers/helpers-dir"
+.button
+    color: $white
+    text-align: center
+    vertical-align: middle
+    border: $border-width solid transparent 
+    transition: all,.2s ease-in-out 
+    background-color: $black
+    text-align: center
+    border-radius: $border-radius
+    size: $font-base
+    font-weight: $font-weight-normal
+    display: inline-block
+    line-height:  $base-line-height
+    +btn-sizing($btn-padding-y, $btn-padding-x, $border-radius, $font-base)
+
+
+.btn-1
+    +btn-sizing(10px, 25px, 30px, $font-base)
+    +button-variant($btn-main-color, lighten($btn-dark-bg, 40%), $btn-border-dark)
+.btn-2
+    +btn-sizing(7px, 75px, 30px, $font-large)
+    +button-variant($btn-main-color,$btn-primary-bg, $btn-border-primary)
+
+.btn-3
+    +btn-sizing(18px, 50px, 30px, $font-base)
+    +button-variant($btn-main-color, $btn-third-bg, $btn-border-third)
